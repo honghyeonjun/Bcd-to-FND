@@ -1,0 +1,76 @@
+# 생성: https://www.toptal.com/developers/gitignore/api/vivado,xilinxvivado
+# https://www.toptal.com/developers/gitignore?templates=vivado,xilinxvivado에서 편집
+
+### 비바도 ###
+################################################### ################################################### #####
+## 이것은 Vivado용 .gitignore 파일의 예입니다. 예를 들어 다음과 같이 처리하십시오.
+## 완전하지 않을 수 있습니다. 또한 XAPP 1165를 따라야 합니다.
+##########
+#모두제외
+*
+!*/
+!.gitignore
+################################################### ###########################
+## 비바도
+#소스 파일:
+#VHDL, Verilog, 블록 다이어그램 또는 EDIF 파일을 무시하지 마십시오.
+!*.vhd
+!*.V
+!*.sv
+!*.bd
+!*.edif
+#IP 파일
+#.xci: 합성 및 구현 불가능 - 출력 제품을 생성하려면 이전 버전으로 돌아가야 합니다.
+#.xci + .dcp: 구현은 가능하지만 재합성은 불가능
+#*.xci(www.spiritconsortium.org)
+!*.xci
+#.xcix: 코어 컨테이너 파일
+#.xcix: https://www.xilinx.com/support/documentation/sw_manuals/xilinx2016_2/ug896-vivado-ip.pdf (페이지 41)
+!*.xcix
+#*.dcp(체크포인트 파일)
+!*.dcp
+!*.vds
+!*.pb
+#모든 bd 주석 및 레이아웃 좌표는 .ui에 저장됩니다.
+!*.ui
+!*.ooc
+#시스템 제너레이터
+!*.mdl
+!*.slx
+!*.bxml
+#시뮬레이션 로직 애널라이저
+!*.wcfg
+!*.코
+#MIG
+!*.prj
+!*.멤
+#프로젝트 파일
+#XPR + *.XML ? XPR(2014.1 버전의 경우 파일이 단일 XPR 파일로 병합됨)
+# *.xpr 파일을 무시하지 마십시오
+!*.xpr
+#2013.4 또는 이전 버전용 *.xml 파일 포함
+!*.xml
+#제약조건 파일
+# *.xdc 파일을 무시하지 마십시오
+!*.xdc
+#TCL - 파일
+!*.tcl
+#저널 - 파일
+!*.주
+#신고
+!*.rpt
+!*.txt
+!*.vdi
+#C 파일
+!*.씨
+!*.시간
+!*.꼬마 요정
+!*.bmm
+!*.xmp
+
+### 자일링스비바도 ###
+#.xci: 코어 컨테이너가 비활성화된 IP 코어 속성 파일
+#*.dcp(체크포인트 파일: 무시하는 것이 좋습니다!)
+#!*.dcp
+
+# https://www.toptal.com/developers/gitignore/api/vivado,xilinxvivado의 끝
